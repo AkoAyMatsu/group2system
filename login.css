@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+.placeBox{
+    background-color: transparent;
+    height: 560px;
+    width:1000px;
+    z-index:1;
+    position: absolute;
+    margin-left: 140px;
+    top: 0px;
+    border-radius: 20px;
+    border: 1.5px solid white;
+    box-shadow: 1px 0px 7px 1px white;
+    
+}
+.divider{
+    border-left: 1.5px solid darkgray;
+    height: 540px;
+    left:500px;
+    z-index:2;
+    position:absolute;
+    top: 10px;
+}
+.waterImg {
+    position: absolute;
+    z-index:2;
+    height:520px;
+    width:450px;
+    left:20px;
+    top:20px;
+    border-radius:10px;
+}
+.welcomeText{
+    z-index:2;
+    position: absolute;
+    top:20px;
+    font-family:Poppins;
+    font-size: 40px;
+    font-weight:bold;
+    text-decoration-color: black;
+    left:575px;
+}
+.usernameText{
+    z-index:2;
+    position: absolute;
+    top:120px;
+    font-family:Poppins;
+    font-weight:bold;
+    font-size: 18px;
+    text-decoration-color: black;
+    left:530px;
+}
+.passwordText{
+    z-index:2;
+    position: absolute;
+    top:230px;
+    font-family:Poppins;
+    font-weight:bold;
+    font-size: 18px;
+    text-decoration-color: black;
+    left:530px;
+}
+.uname input{
+    z-index:2;
+    position: absolute;
+    height:35px;
+    width:432px;
+    top:150px;
+    font-family:Poppins;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius:3px;
+    padding-left: 5px;
+    text-decoration-color: black;
+    left:530px;
+}
+.pswd input{
+    z-index:2;
+    position: absolute;
+    height:35px;
+    width:432px;
+    top:260px;
+    font-family:Poppins;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius:3px;
+    padding-left: 5px;
+    text-decoration-color: black;
+    left:530px;
+    
+}
+.usernameIcon{
+    position: absolute;
+    z-index:3;
+    height:23px;
+    width:23px;
+    left:943px;
+    top:158px;
+    border-radius:0px;
+}   
+.passwordToggle {
+position: absolute;
+z-index: 3;
+top: 50%;
+right: 32px;
+transform: translateY(-50%);
+cursor: pointer;
+width: 30px;
+height: 30px;
+background-image: url('imgs_login/password_eye_icon.png'); /* Replace with your custom eye icon */
+background-size: cover;
+transition: 0.3s ease;
+}
+.passwordToggle.clicked {
+background-image: url('imgs_login/password_hide_icon.png'); /* Replace with your custom crossed eye icon */
+transition: 1s ease;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-contacts-auto-fill-button {
+display: none;
+}
+.logInBtn button{
+    font-family:Poppins;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 2;
+    position: absolute;
+    height:40px;
+    width:100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    left:870px;
+    top: 350px;
+    transition: background-color 0.3s ease;
+}
+.logInBtn button:hover {
+    background-color: yellow;
+}
+.container {
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translateY(20px); /* Move container down slightly */
+    animation: fadeInUp 1s ease-in forwards; /* Add the fade-in animation */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.signUpText{
+    z-index:2;
+    position: absolute;
+    font-family: Poppins;
+    font-size: 12px;
+    left: 680px;
+    top: 500px;
+
+}
+.signUpLink{
+    z-index:2;
+    position: absolute;
+    font-family: Poppins;
+    font-size: 12px;
+    left: 710px;
+    top: 520px;
+    cursor:pointer;
+}
+.signUpLink:hover {
+    color: blue;
+    transition: 1s ease;
+      
+}
+.notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(70, 198, 70) ;
+    font-family:Poppins;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+}
+.success {
+    background-color: #00cc00;
+    color: #ffffff;
+}
+.error {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}

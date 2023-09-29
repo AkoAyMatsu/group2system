@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        .placeBox{
+            background-color: transparent;
+            height: 560px;
+            width:1000px;
+            z-index:1;
+            /*left: 140px;*/
+            position:absolute;
+            margin-left:140px;
+            top: 0px;
+            border-radius: 20px;
+            border: 1.5px solid white;
+            box-shadow: 1px 0px 7px 1px white;
+            
+        }
+        .notification {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(70, 198, 70) ;
+            font-family:Poppins;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        .success {
+            background-color: #00cc00;
+            color: #ffffff;
+        }
+        .error {
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+
+        .notification.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .divider{
+            border-left: 1.5px solid darkgray;
+            height: 540px;
+            left:500px;
+            z-index:2;
+            position:absolute;
+            top: 10px;
+        }
+        .waterImg {
+            position: absolute;
+            z-index:2;
+            height:520px;
+            width:450px;
+            left:20px;
+            top:20px;
+            border-radius:10px;
+        }
+        .backIcon{
+            position: absolute;
+            z-index:2;
+            height:35px;
+            width:30px;
+            left:510px;
+            top:515px;
+            cursor:pointer;
+           /* border-radius:10px;*/
+        }
+        .welcomeText{
+            z-index:2;
+            position: absolute;
+            top:20px;
+            font-family:Poppins;
+            font-size: 40px;
+            font-weight:bold;
+            text-decoration-color: black;
+            left:670px;
+        } 
+        .container {
+            opacity: 0; /* Initially set opacity to 0 */
+            transform: translateY(20px); /* Move container down slightly */
+            animation: fadeInUp 1s ease-in forwards; /* Add the fade-in animation */
+        }
+        .backToLoginText{
+            z-index:2;
+            position: absolute;
+            font-family: Poppins;
+            font-size: 12px;
+            left: 545px;
+            top: 529px;
+            cursor:pointer;
+        }
+        .backToLoginText:hover {
+            color: blue;
+            /*transition: 1s ease;*/
+              
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fname input{
+            z-index:2;
+            position: absolute;
+            height:35px;
+            width:225px;
+            top:100px;
+            font-family:Poppins;
+            font-size: 18px;
+            border: 2px solid black;
+            border-radius:3px;
+            padding-left: 5px;
+            text-decoration-color: black;
+            left:510px;
+        }
+        .lname input{
+            z-index:2;
+            position: absolute;
+            height:35px;
+            width:225px;
+            top:100px;
+            font-family:Poppins;
+            font-size: 18px;
+            border: 2px solid black;
+            border-radius:3px;
+            padding-left: 5px;
+            text-decoration-color: black;
+            left:755px;
+        }
+        .home_ad input{
+            z-index:2;
+            position: absolute;
+            height:35px;
+            width:470px;
+            top:150px;
+            font-family:Poppins;
+            font-size: 18px;
+            border: 2px solid black;
+            border-radius:3px;
+            padding-left: 5px;
+            text-decoration-color: black;
+            left:510px;
+        }
+        .contact_no input{
+            z-index:2;
+            position: absolute;
+            height:35px;
+            width:470px;
+            top:200px;
+            font-family:Poppins;
+            font-size: 18px;
+            border: 2px solid black;
+            border-radius:3px;
+            padding-left: 5px;
+            text-decoration-color: black;
+            left:510px;
+        }
+        .uname input{
+            z-index:2;
+            position: absolute;
+            height:35px;
+            width:305px;
+            top:250px;
+            font-family:Poppins;
+            font-size: 18px;
+            border: 2px solid black;
+            border-radius:3px;
+            padding-left: 10px;
+            text-decoration-color: black;
+            left:510px;
+        }
+        .pswd input{
+            z-index:2;
+            position: absolute;
+            height:35px;
+            width:310px;
+            top:300px;
+            font-family:Poppins;
+            font-size: 18px;
+            border: 2px solid black;
+            border-radius:3px;
+            padding-left: 5px;
+            text-decoration-color: black;
+            
+            left:510px;
+        }
+        .passwordToggle {
+            position: absolute;
+            right:175px;  
+            top:320px;                          
+            z-index: 3;
+            transform: translateY(-50%);
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background-image: url('imgs_register/password_eye_icon.png'); /* Replace with your custom eye icon */
+            background-size: cover;
+            transition: 0.3s ease;
+            }
+            .passwordToggle.clicked {
+            background-image: url('imgs_register/password_hide_icon.png'); /* Replace with your custom crossed eye icon */
+            transition: 0.3s ease;
+            }
+        .role select{
+            z-index:2;
+            position: absolute;
+            height:55px;
+            width:320px;
+            top:350px;
+            font-family:Poppins;
+            font-weight:bold;
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius:3px;
+            padding-left: 5px;
+            text-decoration-color: black;
+            left:510px;
+            
+        }
+    .upload-container {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border: 2px dashed darkgray;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 835px;
+      top: 250px;
+      z-index:3;
+    }
+
+    .upload-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .plus-icon {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      
+    }
+
+    .upload-text {
+      font-size: 12px;
+      font-family:Poppins;
+    }
+
+    /* Hide the default file input */
+    input[type="file"] {
+      display: none;
+    }
+
+    /* Style the uploaded image */
+    .uploaded-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .regBtn button{
+        font-family:Poppins;
+        background-color: transparent;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 2;
+        position: absolute;
+        height:40px;
+        width:100px;
+        border: 2px solid black;
+        border-radius: 5px;
+        left:890px;
+        top: 510px;
+        transition: background-color 0.3s ease;
+    }
+    .regBtn button:hover {
+        background-color: yellow;
+    }
+    
