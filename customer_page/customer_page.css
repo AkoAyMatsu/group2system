@@ -1,0 +1,101 @@
+body{
+    font-family: Poppins;
+}
+.company--name{
+    margin-inline-end:auto;
+    padding-left: 0px;
+    margin-left:10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.canvas--color{
+    background-color: rgb(41, 8, 108);
+}
+.canvas--header{
+    background-color: white(41, 8, 108);
+    height:66px;
+}
+.canvas--header--2{
+    background-color:rgb(41, 8, 108);
+    height:150px;
+}
+.close--canvas{
+    background-color: yellow;
+}
+.logout--icon{
+    margin-left:-3px;
+}
+.nav--items > li:hover{
+    text-decoration:underline;
+    color:white;
+    transition:ease-in 0.5s;
+}
+.nav--items > li{
+    border-bottom:1.5px solid white;
+}
+.logout--nav > li:hover{
+    text-decoration:underline;
+    color:white;
+    transition:ease-in 0.5s;
+}
+.logout--text{
+    position:relative;
+    top:1px;
+}
+
+.logout--icon{
+    position:relative;
+    right:1px;
+    top:3px;
+}
+.id--number{
+    font-style: italic;
+}
+.logout--item{
+    cursor:pointer;
+    position:relative;
+    width:350px;
+    top:12px;
+}
+.--user{
+    height:120px;
+    width:130px;
+    margin-top:20px;
+    border:3px solid white;
+
+}
+.user--button{
+    width:100%;
+    text-align:right;
+    border-radius: 15px;
+    background-color: white;
+    color:black;
+}
+
+.user--dropdown--list{
+    width:300px;
+    text-align: right;
+
+}
+.user--icon{
+    position: relative;
+    top:2.3px;
+}
+.dropdown--icon{
+    position:relative;
+    top:4px;
+    color:black;
+}
+.user--name{
+    position: relative;
+    bottom: 1px;
+}
+.canvas--footer{
+    background-color: rgb(41, 8, 108);
+    cursor:pointer;
+    height:100px;
+}
+.dp--icons{
+    position:relative;
+    top:4px;
+}

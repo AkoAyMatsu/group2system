@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="customer_page.css">
+</head>
+<body>
+    <nav class="navbar bg-primary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fs-5"></span>
+            </button>
+            <a class="navbar-brand text-light fs-5 me-auto fw-semibold d-sm-none d-md-flex company--name" href="#">BANI WATER REFILLING STATION</a>
+            <!--Dropdown for user logout-->
+                <div class="dropdown user--dropdown">
+                    <button class="btn btn-outline-light user--button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="bi bi-person-circle fs-3 user--icon"></span>
+                        <span class="px-2 fs-5 user--name">AkoAyMatsu</span>
+                        <span class="dropdown dropdown-toggle fs-3 dropdown--icon"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end user--dropdown--list fs-5">
+                        <li>
+                            <a class="dropdown-item" href="#">Profile
+                                <span class="bi bi-person-circle fs-3 px-1 dp-icons"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">My Cart
+                                <span class="bi bi-cart fs-3 px-1 dp-icons"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">My Purchases
+                                <span class="bi bi-bag fs-3 px-1 dp-icons"></span>
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="">
+                            <a class="dropdown-item" href="#">Logout
+                                <span class="bi bi-box-arrow-left fs-3 px-2 dp--icons"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <!--end of that dropdown-->
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header canvas--header">
+                    <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Welcome AkoAyMatsu!</h5>
+                    <button type="button" class="btn-close close--btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-header canvas--header--2">
+                    <div class="d-inline-flex align-items-center py-2 justify-content-center rounded-circle bg-primary --user">Hello</div>
+                    <div class="h5 text-light me-auto px-3 mt-5">AkoAyMatsu
+                        <div class="h5 text-light pt-2">USER ID: <span class="id--number h5 text-light">201-0098-3</span></div>
+                    </div>
+                    
+                </div>
+
+                <div class="offcanvas-body canvas--color">
+                    <ul class="navbar-nav justify-content-end pe-3 nav--items">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" aria-current="page" href="customer_dashboard.html">
+                                <span class="bi bi-speedometer2 fs-3 px-2"></span>Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" href="#">
+                                <span class="bi bi-bag fs-3 px-2"></span>Shop Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" href="#">
+                                <span class="bi bi-cart fs-3 px-2"></span>Cart
+                            </a>
+                        </li>
+                        <!--Profile-->
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" href="#">
+                                <span class="bi bi-person-circle fs-3 px-2"></span>Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" href="#">
+                                <span class="bi bi-gear fs-3 px-2"></span>Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="offcanvas-header canvas--footer">
+                    <ul class="navbar-nav justify-content-end pe-3 logout--nav">
+                        <li class="nav-item d-flex pt-1 py-1 logout--item">
+                            <a class="nav-link active fs-5 text-light logout--text" href="#">
+                                <span class="bi bi-box-arrow-left fs-2 px-2 logout--icon"></span>Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+        
+        
+        
+        
+        
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
