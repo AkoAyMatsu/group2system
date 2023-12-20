@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="customer_cart.css">
+</head>
+<body>
+    <nav class="navbar bg-primary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fs-5"></span>
+            </button>
+            <a class="navbar-brand text-light fs-5 me-auto fw-semibold d-sm-none d-md-flex company--name" href="#">BANI WATER REFILLING STATION</a>
+            <!--Dropdown for user logout-->
+                <div class="dropdown user--dropdown">
+                    <button class="btn btn-outline-light user--button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="bi bi-person-circle fs-3 user--icon"></span>
+                        <span class="px-2 fs-5 user--name">AkoAyMatsu</span>
+                        <span class="dropdown dropdown-toggle fs-3 dropdown--icon"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end user--dropdown--list fs-5">
+                        <li>
+                            <a class="dropdown-item" href="#">Profile
+                                <span class="bi bi-person-circle fs-3 px-1 dp-icons"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">My Cart
+                                <span class="bi bi-cart fs-3 px-1 dp-icons"></span>
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="">
+                            <a class="dropdown-item" href="#">Logout
+                                <span class="bi bi-box-arrow-left fs-3 px-2 dp--icons"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <!--end of that dropdown-->
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header canvas--header">
+                    <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Welcome AkoAyMatsu!</h5>
+                    <button type="button" class="btn-close close--btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-header canvas--header--2">
+                    <div class="d-inline-flex align-items-center py-2 justify-content-center rounded-circle bg-primary --user">Hello</div>
+                    <div class="h5 text-light me-auto px-3 mt-5">AkoAyMatsu
+                        <div class="h5 text-light pt-2">USER ID: <span class="id--number h5 text-light">201-0098-3</span></div>
+                    </div>
+                    
+                </div>
+
+                <div class="offcanvas-body canvas--color">
+                    <ul class="navbar-nav justify-content-end pe-3 nav--items">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" aria-current="page" href="customer_dashboard.html">
+                                <span class="bi bi-speedometer2 fs-3 px-2"></span>Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" href="customer_shop_products.html">
+                                <span class="bi bi-bag fs-3 px-2"></span>Shop Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" href="customer_cart.html">
+                                <span class="bi bi-cart fs-3 px-2"></span>Cart
+                            </a>
+                        </li>
+                        <!--Profile-->
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" href="#">
+                                <span class="bi bi-person-circle fs-3 px-2"></span>Profile
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="offcanvas-header canvas--footer">
+                    <ul class="navbar-nav justify-content-end pe-3 logout--nav">
+                        <li class="nav-item d-flex pt-1 py-1 logout--item">
+                            <a class="nav-link active fs-5 text-light logout--text" href="#">
+                                <span class="bi bi-box-arrow-left fs-2 px-2 logout--icon"></span>Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container-fluid pt-5 h-100 w-100 mt-1 table--container" id="orderHistory">
+            <ul class="nav nav-tabs dash--tabs">
+                <li class="nav-item title--place d-flex">
+                    <div class="nav-link fs-5 text-bg-dark dash--title" aria-current="page"><a href="customer_cart.html">Cart Items</a></div>
+                    <div class="nav-link fs-5 text-bg-dark dash--title" aria-current="page"><a href="customer_order_checkout.html">Order</a></div>
+                    <div class="nav-link fs-5 text-bg-dark dash--title" aria-current="page"><a href="customer_order_status.html">Order Status</a></div>
+                </li>
+            </ul>
+            <table class="table table-responsive table-bordered table-borderless fs-5 dash--table">
+                <tbody>
+                <tr>
+                    <td class="col-sm-2 col-md-1">
+                        <div class="form-check text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center">
+                            <input class="form-check-input mx-sm-0 me-sm-4 mx-lg-3 me-lg-5 fs-1 border-2 border-black box-size" type="checkbox" value="" id="flexCheckDefault">
+                        </div> 
+                    </td>
+                    <td>
+                        <div class="container-fluid p-5 mt-1">
+                            <div class="container-fluid bg-primary me-5 pt-md-4 w-100 h-100 d-md-inline-flex d-sm-block border-3 rounded-3 text-sm-center text-center rg--container">
+                                
+                                <div class="pb-3 px-2 img--container">
+                                    <img src="rounded-gallon.jpeg" alt="" class="p-2 pb-md-1 mb-md-2 img-fluid rd--gallon">
+                                </div>
+                                    <div class="rd--container mb-0 mb-sm-1 py-0 py-md-0 mt-md-0">
+                                        <div class="h5 mx-md-0 ms-md-0 my-md-3 text-md-start">18L Rounded Gallon Water</div>
+                                        <div class="h5 mx-sm ms-md-auto d-md-flex justify-content-md-start">
+                                            <span class="h5 mx-sm-0">Php</span>
+                                            <span class="h5 px-1 px-sm-1 roundPrice">280.00</span>
+                                        </div>
+                                        
+                                        <div class="py-3 py-md-1 mx-sm-3 mt-md-5 ms-md-auto d-sm-flex justify-content-sm-center d-md-flex justify-content-md-start d-flex justify-content-center select--option">
+                                            <select class="form-select text-bg-info fs-5 w-50 h-25 round--order--select" aria-label="Default select example">
+                                                <option value="Buy">Buy</option>
+                                                <option value="Refill">Refill</option>
+                                                <option value="Borrow">Borrow</option>
+                                            </select>
+                                            <div class="d-inline-flex">
+                                                <div>
+                                                    <button class="btn btn-light mx-1 ms-md-3 mx-md-1 py-1 min--rd">
+                                                        <div class="bi bi-dash fs-5 mt-1"></div>
+                                                    </button>
+                                                    
+                                                </div>
+                                                <span class="bg bg-light px-4 rounded-2 fs-3 py-0 w-50 ms-md-0 quantity--round">
+                                                    20
+                                                </span>
+                                                <button class="btn btn-light mx-1 ms-md-1 mx-md-2 py-1 min--rd">
+                                                    <div class="bi bi-plus fs-5 mt-1"></div>
+                                                </button>
+                                            </div>
+                                                
+
+                                            
+                                        </div>
+
+                                        
+                                    </div>   
+                                </div>
+                            </div>
+                        </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="container-fluid">
+                <div class="container-fluid d-flex">
+                    <input class="form-check-input mb-2 mb-sm-2 fs-1 border-2 border-black box--size" type="checkbox" value="" id="flexCheckDefault">
+                    <div class="h5 mt-3 mt-sm-4 mt-md-4 all--text">All</div>
+                    <button class="btn btn-danger ms-auto d-md-inline-flex h-25 mt-3 fs-5 mt-lg-3">
+                        <span class="h6 d-sm-none d-md-inline mt-md-1 px-md-1">Remove</span>
+                        <span class="bi bi-trash"></span>
+                    </button> 
+                    <div class="mt-3 py-1 h6 ms-auto">
+                        Total
+                        <span class="h6 fw-bold px-0">Php</span>
+                        <span class="h6 fw-bold pe-4">1000.00</span>
+                        <button class="btn btn-primary mb-2">
+                            Checkout
+                            <span class="h6 pt-1">(1)</span>
+                        </button>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        
+        
+        
+        
+        
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

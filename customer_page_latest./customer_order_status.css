@@ -1,0 +1,169 @@
+body{
+    font-family: Poppins;
+}
+.company--name{
+    margin-inline-end:auto;
+    padding-left: 0px;
+    margin-left:10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.canvas--color{
+    background-color: rgb(41, 8, 108);
+}
+.canvas--header{
+    background-color: white(41, 8, 108);
+    height:66px;
+}
+.canvas--header--2{
+    background-color:rgb(41, 8, 108);
+    height:150px;
+}
+.close--canvas{
+    background-color: yellow;
+}
+.logout--icon{
+    margin-left:-3px;
+}
+.nav--items > li:hover{
+    text-decoration:underline;
+    color:white;
+    transition:ease-in 0.5s;
+}
+.nav--items > li{
+    border-bottom:1.5px solid white;
+}
+.logout--nav > li:hover{
+    text-decoration:underline;
+    color:white;
+    transition:ease-in 0.5s;
+}
+.logout--text{
+    position:relative;
+    top:1px;
+}
+
+.logout--icon{
+    position:relative;
+    right:1px;
+    top:3px;
+}
+.id--number{
+    font-style: italic;
+}
+.logout--item{
+    cursor:pointer;
+    position:relative;
+    width:350px;
+    top:12px;
+}
+.--user{
+    height:120px;
+    width:130px;
+    margin-top:20px;
+    border:3px solid white;
+
+}
+.user--button{
+    width:100%;
+    text-align:right;
+    border-radius: 15px;
+    background-color: white;
+    color:black;
+}
+
+.user--dropdown--list{
+    width:300px;
+    text-align: right;
+
+}
+.user--icon{
+    position: relative;
+    top:2.3px;
+}
+.dropdown--icon{
+    position:relative;
+    top:4px;
+    color:black;
+}
+.user--name{
+    position: relative;
+    bottom: 1px;
+}
+.canvas--footer{
+    background-color: rgb(41, 8, 108);
+    cursor:pointer;
+    height:100px;
+}
+.dp--icons{
+    position:relative;
+    top:4px;
+}
+.dash--title{
+    width:200px;
+    height:50px;
+    padding-top:10px;
+}
+.dash--table{
+    border:none;
+}
+.rd--gallon{
+    border-radius:15px;
+    width:190px;
+    height:190px;
+}
+.box-size{
+    width:50px;
+    height:50px;
+}
+.box--size{
+    width:50px;
+    height:50px
+}
+@media (min-width:576px){
+    .box-size{
+        position:relative;
+        top:190px;
+    }
+    .box--size{
+        position:relative;
+        left:18px;
+    }
+    .all--text{
+        position:relative;
+        left:30px;
+        top:7px
+    }
+}
+@media (min-width:768px){
+    .box-size{
+        position:relative;
+        top:130px;
+    }
+}
+@media (min-width:992px){
+    .box-size{
+        position:relative;
+        top:130px;
+    }
+    .box--size{
+        position:relative;
+        left:33px;
+    }
+    .all--text{
+        position:relative;
+        left:45px;
+    }
+}
+@media (min-width:1200px){
+    .box-size{
+        position:relative;
+        top:130px;
+    }
+}
+@media (min-width:1400px){
+    .box-size{
+        position:relative;
+        top:130px;
+    }
+}

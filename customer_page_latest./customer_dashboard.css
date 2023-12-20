@@ -1,0 +1,189 @@
+body{
+    font-family: Poppins;
+}
+.company--name{
+    margin-inline-end:auto;
+    padding-left: 0px;
+    margin-left:10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.canvas--color{
+    background-color: rgb(41, 8, 108);
+}
+.canvas--header{
+    background-color: white(41, 8, 108);
+    height:66px;
+}
+.canvas--header--2{
+    background-color:rgb(41, 8, 108);
+    height:150px;
+}
+.close--canvas{
+    background-color: yellow;
+}
+.logout--icon{
+    margin-left:-3px;
+}
+.nav--items > li:hover{
+    text-decoration:underline;
+    color:white;
+    transition:ease-in 0.5s;
+}
+.nav--items > li{
+    border-bottom:1.5px solid white;
+}
+.logout--nav > li:hover{
+    text-decoration:underline;
+    color:white;
+    transition:ease-in 0.5s;
+}
+.logout--text{
+    position:relative;
+    top:1px;
+}
+
+.logout--icon{
+    position:relative;
+    right:1px;
+    top:3px;
+}
+.id--number{
+    font-style: italic;
+}
+.logout--item{
+    cursor:pointer;
+    position:relative;
+    width:350px;
+    top:12px;
+}
+.--user{
+    height:120px;
+    width:130px;
+    margin-top:20px;
+    border:3px solid white;
+
+}
+.user--button{
+    width:100%;
+    text-align:right;
+    border-radius: 15px;
+    background-color: white;
+    color:black;
+}
+
+.user--dropdown--list{
+    width:300px;
+    text-align: right;
+
+}
+.user--icon{
+    position: relative;
+    top:2.3px;
+}
+.dropdown--icon{
+    position:relative;
+    top:4px;
+    color:black;
+}
+.user--name{
+    position: relative;
+    bottom: 1px;
+}
+.canvas--footer{
+    background-color: rgb(41, 8, 108);
+    cursor:pointer;
+    height:100px;
+}
+.table--container{
+    height:100%;
+}
+.dash--tabs{
+    position:relative;
+    bottom:30px;
+    border-bottom:none;
+}
+.dash--table{
+    position: relative;
+    bottom:30px;
+    text-align:center;
+}
+.tb--header{
+    background-color: lightblue;
+    color:white;
+}
+.rounded--gallon{
+    border:2px solid gray;
+    border-radius:5px;
+    width:150px;
+}
+.slim--gallon{
+    border:2px solid gray;
+    border-radius:5px;
+    width:100px;
+}
+.product--text{
+    font-size:15px;
+    margin-top:30px;
+    text-align:center;
+}
+.profile--card{
+    position:relative;
+    right:25px;
+    width:20rem;
+    height:20rem;
+    text-align:center;
+}
+.order--card{
+    position:relative;
+    left:25px;
+    width:20rem;
+    height:20rem;
+    text-align:center;
+}
+.dash--title{
+    text-align:center;
+}
+.title--place{
+    width:100%;
+}
+.card--icon{
+    background-color:lightblue;
+    font-size:120px;
+}
+.goto--icon{
+    position:relative;
+    top:3px;
+}
+.userImageContainer{
+    position:relative;
+
+    bottom:5px;
+    width:100%;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.userImage{
+    width:300px;
+    height:300px;
+}
+.profile--table{
+    position: relative;
+    bottom:30px;
+    text-align:center;
+}
+.icon--class{
+    font-size:200px;
+    position:relative;
+    bottom: 40px;
+    left:4px;
+}
+.save--con{
+    position:relative;
+    top: 35px;
+}
+.upload-button{
+    position:relative;
+    right:120px;
+    bottom: 20px;
+}

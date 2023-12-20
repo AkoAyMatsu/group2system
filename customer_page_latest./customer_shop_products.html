@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="customer_shop_products.css">
+</head>
+<body>
+    <nav class="navbar bg-primary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fs-5"></span>
+            </button>
+            <a class="navbar-brand text-light fs-5 me-auto fw-semibold d-sm-flex company--name" href="#">BANI WATER REFILLING STATION</a>
+            <!--Dropdown for user logout-->
+                <div class="dropdown user--dropdown d-md-flex d-sm-none d-none">
+                    <button class="btn btn-outline-light user--button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="bi bi-person-circle fs-3 user--icon"></span>
+                        <span class="px-2 fs-5 user--name">AkoAyMatsu</span>
+                        <span class="dropdown dropdown-toggle fs-3 dropdown--icon"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end user--dropdown--list fs-5">
+                        <li>
+                            <a class="dropdown-item" href="#">Profile
+                                <span class="bi bi-person-circle fs-3 px-1 dp-icons"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">My Cart
+                                <span class="bi bi-cart fs-3 px-1 dp-icons"></span>
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="">
+                            <a class="dropdown-item" href="#">Logout
+                                <span class="bi bi-box-arrow-left fs-3 px-2 dp--icons"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <!--end of that dropdown-->
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header canvas--header">
+                    <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Welcome AkoAyMatsu!</h5>
+                    <button type="button" class="btn-close close--btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-header canvas--header--2">
+                    <div class="d-inline-flex align-items-center py-2 justify-content-center rounded-circle bg-primary --user">Hello</div>
+                    <div class="h5 text-light me-auto px-3 mt-5">AkoAyMatsu
+                        <div class="h5 text-light pt-2">USER ID: <span class="id--number h5 text-light">201-0098-3</span></div>
+                    </div>
+                    
+                </div>
+
+                <div class="offcanvas-body canvas--color">
+                    <ul class="navbar-nav justify-content-end pe-3 nav--items">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" aria-current="page" href="customer_dashboard.html">
+                                <span class="bi bi-speedometer2 fs-3 px-2"></span>Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" href="customer_shop_products.html">
+                                <span class="bi bi-bag fs-3 px-2"></span>Shop Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" href="customer_cart.html">
+                                <span class="bi bi-cart fs-3 px-2"></span>Cart
+                            </a>
+                        </li>
+                        <!--Profile-->
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5 text-light" href="#">
+                                <span class="bi bi-person-circle fs-3 px-2"></span>Profile
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="offcanvas-header canvas--footer">
+                    <ul class="navbar-nav justify-content-end pe-3 logout--nav">
+                        <li class="nav-item d-flex pt-1 py-1 logout--item">
+                            <a class="nav-link active fs-5 text-light logout--text" href="#">
+                                <span class="bi bi-box-arrow-left fs-2 px-2 logout--icon"></span>Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--ROUNDED GALLON SECTION-->
+    <section>
+        <div class="container-fluid p-5 mt-1">
+            <div class="container-fluid bg-primary-subtle w-100 h-100 d-md-inline-flex d-sm-block  border-3 rounded-3 text-sm-center text-center rg--container">
+                
+                <div class="p-2 img--container">
+                    <img src="rounded-gallon.jpeg" alt="" class="p-2 img-fluid rd--gallon">
+                </div>
+                    <div class="rd--container mb-0 mb-sm-1 py-0 py-md-3">
+                        <div class="h5 mx-sm-3 ms-md-0">18L Rounded Gallon Water</div>
+                        <div class="h5 mx-sm-3 ms-md-auto d-md-flex justify-content-md-start">
+                            Php<span class="h5 px-1 roundPrice">280.00</span>
+                        </div>
+                        
+                        <div class="py-1 mx-sm-3 ms-md-auto d-sm-flex justify-content-sm-center d-md-flex justify-content-md-start d-flex justify-content-center select--option">
+                            <select class="form-select text-bg-primary fs-5 w-50 round--order--select" aria-label="Default select example">
+                                <option value="Buy">Buy</option>
+                                <option value="Refill">Refill</option>
+                                <option value="Borrow">Borrow</option>
+                            </select>
+                        </div>
+    
+    
+                        <div class="d-flex py-4 py-sm-4 py-md-0 mt-md-5 mx-sm-3 mx-md-0 justify-content-sm-center justify-content-center order--buttons">
+                            <button type="button" class="btn btn-primary ms-sm-3 ms-1 ms-md-0 roundAddToCart" data-bs-toggle="modal" data-bs-target="#roundModal">
+                                <div class="bi bi-cart-plus fs-3"></div>Add to Cart
+                            </button>
+                            <button type="button" class="btn btn-primary ms-sm-3 me-sm-3 ms-2 me-2 me-md-auto round--buy" data-bs-toggle="modal" data-bs-target="#roundModal">
+                                <div class="bi bi-coin fs-3"></div>Order Now
+                            </button>
+                        </div>
+                    </div>   
+            </div>
+    
+            <div class="py-4"></div>
+
+    <!--SLIM GALLON SECTION-->
+            <div class="container-fluid bg-primary-subtle w-100 h-100 d-md-inline-flex d-sm-block border-3 rounded-3 text-sm-center text-center sb--container">
+                <div class="p-2 img--container">
+                    <img src="slim-gallon.jpg" alt="" class="p-2 img-fluid slim--gallon">
+                </div>
+                    <div class="slim--container mb-0 mb-sm-1 py-0 py-md-3">
+                        <div class="h5 mx-sm-3 ms-md-auto text-md-start">20L Slim Gallon Water</div>
+                        <div class="h5 mx-sm-3 ms-md-auto d-md-flex justify-content-md-start">
+                            Php<span class="h5 px-1 slimPrice">280.00</span>
+                        </div>
+                        
+                        <div class="py-1 mx-sm-3 ms-md-auto d-sm-flex justify-content-sm-center d-md-flex justify-content-md-start d-flex justify-content-center select--option">
+                            <select class="form-select text-bg-primary fs-5 w-50 slim--order--select" aria-label="Default select example">
+                                <option value="Buy">Buy</option>
+                                <option value="Refill">Refill</option>
+                                <option value="Borrow">Borrow</option>
+                            </select>
+                        </div>
+    
+    
+                        <div class="d-inline-flex py-4 py-sm-4 py-md-0 mt-md-5 mx-sm-3 mx-md-0 justify-content-sm-center justify-content-center order--buttons">
+                            <button type="button" class="btn btn-primary ms-sm-3 ms-1 ms-md-auto slimAddToCart" data-bs-toggle="modal" data-bs-target="#slimModal">
+                                <div class="bi bi-cart-plus fs-3"></div>Add to Cart
+                            </button>
+                            <button type="button" class="btn btn-primary ms-sm-3 me-sm-3 ms-2 me-2 slim--buy" data-bs-toggle="modal" data-bs-target="#slimModal">
+                                <div class="bi bi-coin fs-3"></div>Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    
+    </section>
+    <!--END OF SECTION-->
+  
+  <!-- ROUNDED GALLON MODAL-->
+
+  <div class="modal fade" id="roundModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title fs-4" id="exampleModalLabel">ORDER
+            <span class="fs-4 round--order--type"></span>
+          </div>
+          <button type="button" class="btn-close ms-auto fs-4 round--close--button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex bg-light-subtle">
+            <div class="container-fluid text-center">
+                <img src="rounded-gallon.jpeg" alt="" class="p-2 w-50 rounded-4 border-3">
+                <div class="h5">18L Rounded Gallon Water</div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-secondary mx-1 min--rd">
+                        <div class="bi bi-dash fs-4 mt-1"></div>
+                    </button>
+                    <div class="text-bg-primary rounded-2 fs-3 py-1 w-25 quantity--round"></div>
+                    <button class="btn btn-secondary mx-1 add--rd">
+                        <div class="bi bi-plus fs-4"></div>
+                    </button>
+                </div>
+                <div class="fs-5 py-3 ms-2">
+                    Total Price
+                </div>
+                <div class="fw-bold ms-3">
+                    <div class="fs-5">
+                        Php<span class="fs-5 px-1 round--total">0.00</span>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+            
+          
+        </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary round--cart--button" data-bs-toggle="modal" data-bs-target="#addToCartModal">Add to Cart</button>
+                <button type="submit" class="btn btn-primary ms-auto fs4 order--now--round" data-bs-toggle="modal" data-bs-target="#orderNowModal">Order Now</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+      
+
+<!--END OF ROUNDED GALLON MODAL-->
+
+    <!--SLIM GALLON MODAL-->
+    <div class="modal fade" id="slimModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title fs-4" id="exampleModalLabel">ORDER
+                <span class="fs-4 slim--order--type"></span>
+              </div>
+              <button type="button" class="btn-close ms-auto fs-4 slim--close--button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex">
+                <div class="container-fluid text-center">
+                    <img src="slim-gallon.jpg" alt="" class="p-2 w-50 rounded-4 border-3">
+                    <div class="h5">20L Slim Gallon Water</div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-secondary mx-1 min--slim">
+                            <div class="bi bi-dash fs-4 mt-1"></div>
+                        </button>
+                        
+                        <div class="text-bg-primary rounded-2 fs-3 py-1 w-25 quantity--slim"></div>
+                        
+                            
+                        <button class="btn btn-secondary mx-1 add--slim">
+                            <div class="bi bi-plus fs-4"></div>
+                        </button>
+                    </div>
+                    <div class="fs-5 py-3 ms-2">
+                        Total Price
+                    </div>
+                    <div class="fw-bold ms-3">
+                        <div class="fs-5">
+                            Php<span class="fs-5 px-1 slim--total">0.00</span>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+              
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary slim--cart--button" data-bs-toggle="modal" data-bs-target="#addToCartModal">Add to Cart</button>
+                    <button type="submit" class="btn btn-primary ms-auto order--now--slim" data-bs-toggle="modal" data-bs-target="#orderNowModal">Order Now</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    <!--END OF SLIM GALLON MODAL-->
+        
+    <!-- ========== Add to Cart Modal ========== -->
+    <div class="modal" tabindex="-1" id="addToCartModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold">Confirm Order</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Add
+                <span class="cart--items"></span>
+                <span>items to cart?</span>
+              </p>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
+              <button type="button" class="btn btn-primary confirmedToCart" data-bs-toggle="modal" data-bs-target="#successAddToCart">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========== End Section ========== -->
+
+      <!-- ========== Order Now Modal  ========== -->
+      <div class="modal" tabindex="-1" id="orderNowModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold">Confirm Order</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Order
+                <span class="order--items"></span>
+                <span>items now?</span>
+              </p>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
+              <button type="button" class="btn btn-primary confirmedOrder" data-bs-toggle="modal" data-bs-target="#successOrderNow">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========== End Section ========== -->
+
+    <!-- ========== Success Add to Cart ========== -->
+    <div class="modal" tabindex="-1" id="successAddToCart">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold">Success!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="bi bi-check-circle text-success">
+                    <span class="h6 success--cart text-decoration-none"></span>
+                    <span class="h6 text-decoration-none">items successfully added to cart!</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary goToCart" data-bs-dismiss="modal">Go to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- ========== End Section ========== -->
+    
+    <!-- ========== Success Order Now ========== -->
+    <div class="modal" tabindex="-1" id="successOrderNow">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold">Success!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="bi bi-check-circle text-success">
+                    <span class="h6 success--order text-decoration-none"></span>
+                    <span class="h6 text-decoration-none">items successfully ordered!</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary checkout" data-bs-dismiss="modal">Go to Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- ========== End Section ========== -->
+        
+    <script src="customer_shop_products.js"></script> 
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
